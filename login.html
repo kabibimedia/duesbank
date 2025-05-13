@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dues Bank</title>
+    <link rel="stylesheet" href="duesbank.css">
+    <link rel="stylesheet" href="dueslogin.css">
+
+  </head>
+
+<body>
+    <header>
+     <img src="images/sm.png" class="logo" alt="">
+     <h4>Dues Bank</h4>
+        <nav class="navigation">
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+   
+            <div class="form-box login">
+                 <h2>Login</h2>
+                 <form onsubmit="submit_form(); return false;">
+                      <div class="input-box">
+                       <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                       <input type="text" id="un1" required>
+                       <label>Username</label>
+                      </div>
+                      <div class="input-box">
+                           <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                           <input type="password" id="p1" required>
+                           <label>Password</label>
+                      </div> 
+                      <div class="remember-forgot">
+                           <label><input type="checkbox">
+                           Remember me</label>
+                           <a href="#">Forgot password?</a>
+                      </div>
+                      <button type="sumbit" class="btn">Login</button>
+                 </form>
+            </div>
+       </div>
+
+      
+       <footer>
+        <div class="copyright">
+          <p>© 2023, KabibiMedia Tel:+233552230864 Accra-Ghana</p>
+      </div>
+       </footer>
+    
+
+       <script src="duesbank.js"></script>
+       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+     </body>
+</html>

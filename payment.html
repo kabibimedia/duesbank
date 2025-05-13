@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dues Bank</title>
+    <link rel="stylesheet" href="duesbank.css">
+
+  </head>
+
+<body>
+  <header>
+    <img src="images/sm.png" class="logo" alt="">
+    <h4>Dues Bank</h4>
+    <h5>Payment</h5>
+       <nav class="navigation">
+          <button class="btnLogin-popup" onclick="redirectToPage('payhome.html')"> Back </button>
+          <button class="btnRefresh" onclick="refreshPage()"> Refresh </button>
+          <button class="btnLogin-popup" onclick="redirectToPage('login.html')"> Logout </button>
+           <p id="date"></p>
+           <p id="time"></p>
+       </nav>
+   </header>
+
+  <div class="bank-entry">
+   <h1>Transaction</h1>
+    <!-- Search Option -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search by Client Name or Account Number">
+      <button onclick="searchClient()">Search</button>
+    </div>
+      
+    <hr> <!-- Horizontal line -->
+
+    <form onsubmit="return false;">
+      <div class="form-group">
+        <label for="account">Account Name:</label>
+        <input type="text" id="account" placeholder="Account name">
+      </div>
+
+      <div class="form-group">
+        <label for="account">Account Number:</label>
+        <input type="text" id="accountNumber" placeholder="Account number">
+      </div>
+
+      <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount">
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea id="description" placeholder="Enter description"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date">
+      </div>
+
+      <div class="form-group">
+        <label for="transaction_type">Transaction Type:</label>
+        <select id="transaction_type">
+          <option value="">Select transaction type</option>
+          <option value="cash"> Cash </option>
+          <option value="momo"> Mobile Money </option>
+          <option value="bankTransfer"> Bank Transfer </option>  
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="">Select category</option>
+          <option value="wedding">Wedding</option>
+          <option value="graduation">Graduation</option>
+          <option value="funeral">Funeral</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <button type="button" class="btn" onclick="paymentForm()">Submit</button>
+    </form>
+  </div>
+
+      <footer>
+        <div class="copyright">
+          <p>© 2023, KabibiMedia Tel:+233552230864 Accra-Ghana</p>
+      </div>
+       </footer>
+              
+           <script src="duesbank.js"></script>
+           <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <!-- Preview dialog -->
+        <div class="preview-dialog" id="previewDialog">
+          <h2>Preview Transaction Data</h2>
+          <div id="previewContent"></div>
+          <button onclick="printPreview()">Print</button>
+          <button onclick="hidePreviewDialog()">Close</button>
+        </div>
+         </body>
+    </html>

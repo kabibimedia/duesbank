@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dues Bank</title>
+    <link rel="stylesheet" href="duesbank.css">
+
+  </head>
+
+<body>
+  <header>
+    <img src="images/sm.png" class="logo" alt="">
+    <h4>Dues Bank</h4>
+    <h5>Collection Menu</h5>
+       <nav class="navigation">
+        <button class="btnLogin-popup" onclick="redirectToPage('home.html')"> Back </button>
+        <button class="btnRefresh" onclick="refreshPage()"> Refresh </button>
+        <button class="btnLogin-popup" onclick="redirectToPage('login.html')"> Logout </button>
+           <p id="date"></p>
+           <p id="time"></p>
+       </nav>
+   </header>
+    
+  <div class="menu-grid">
+    <div class="menu-item">
+      <h3>Collection</h3>
+      <p>Monthly Dues/Contribution/Donation.</p>
+      <button class="btn" onclick="redirectToPage('collection.html')">  Collect Dues/Contribution  <ion-icon name="wallet-outline"></ion-icon></button>
+      <p>Edit</p>
+      <button class="btn" onclick="redirectToPage('editcollect.html')">  Edit collection  <ion-icon name="wallet-outline"></ion-icon></button>
+      <p>Reversal</p>
+      <button class="btn" onclick="redirectToPage('reversecollect.html')">  Reverse collection  <ion-icon name="wallet-outline"></ion-icon></button>
+    </div>
+
+    <div class="menu-grid">
+        <div class="menu-item">
+          <h3>Collection Approval</h3>
+          <p>Monthly Dues/Contribution/Donation.</p>
+          <button class="btn" onclick="redirectToPage('approvecollect.html')">  Approve Collection  <ion-icon name="wallet-outline"></ion-icon></button>
+          <p>Edit</p>
+          <button class="btn" onclick="redirectToPage('approveeditcollect.html')">  Approve Edited collection  <ion-icon name="wallet-outline"></ion-icon></button>
+          <p>Reversal</p>
+          <button class="btn" onclick="redirectToPage('approvereversecollect.html')">  Approve Reversed collection  <ion-icon name="wallet-outline"></ion-icon></button>
+        </div>
+
+  <footer>
+    <div class="copyright">
+      <p>© 2023, KabibiMedia Tel:+233552230864 Accra-Ghana</p>
+  </div>
+   </footer>
+          
+       <script src="duesbank.js"></script>
+       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+     </body>
+</html>

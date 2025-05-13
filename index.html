@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dues Bank</title>
+    <link rel="stylesheet" href="duesbank.css">
+
+  </head>
+
+<body>
+  <header>
+    <img src="images/sm.png" class="logo" alt="">
+    <h4>Dues Bank</h4>
+    <h5>Menu</h5>
+       <nav class="navigation">
+        <button class="btnRefresh" onclick="refreshPage()"> Refresh </button>
+        <button class="btnLogin-popup" onclick="redirectToPage('login.html')"> Logout </button>
+           <p id="date"></p>
+           <p id="time"></p>
+       </nav>
+   </header>
+    
+  <div class="menu-grid">
+    <div class="menu-item">
+      <h3>Collection</h3>
+      <p>Monthly Dues/Contribution/Donation.</p>
+      <button class="btn" onclick="redirectToPage('collecthome.html')">  Collect Dues/Contribution  <ion-icon name="wallet-outline"></ion-icon></button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Payment</h3>
+      <p>Payment of Funeral,Wedding,Graduation contribution.</p>
+      <button class="btn" onclick="redirectToPage('payhome.html')">  Pay Contribution  <ion-icon name="cash-outline"></ion-icon></button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Report</h3>
+      <p>Client statement</p>
+      <button class="btn" onclick="redirectToPage('report.html')">  Get client statement  <ion-icon name="book"></ion-icon></button>
+      <p>Overall statement</p>
+      <button class="btn" onclick="redirectToPage('overallreport.html')">  Get Overall Report  <ion-icon name="book"></ion-icon></button>
+    </div>
+
+    <div class="menu-item">
+      <h3>Settings</h3>
+      <p>Create client account Details</p>
+      <button class="btn" onclick="redirectToPage('setting.html')">  Set Account  <ion-icon name="cog"></ion-icon></button>
+      <p>Edit client account Details</p>
+      <button class="btn" onclick="redirectToPage('editsetting.html')">  Edit Account  <ion-icon name="cog"></ion-icon></button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="copyright">
+      <p>© 2023, KabibiMedia Tel:+233552230864 Accra-Ghana</p>
+  </div>
+   </footer>
+          
+       <script src="duesbank.js"></script>
+       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+     </body>
+</html>

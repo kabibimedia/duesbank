@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dues Bank</title>
+    <link rel="stylesheet" href="duesbank.css">
+
+  </head>
+
+<body>
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search by Name, ID, or Entry">
+    <button onclick="searchDues()">Search</button>
+  </div>
+
+  <div class="dues-actions">
+    <label for="sortSelect">Sort by:</label>
+    <select id="sortSelect" onchange="sortDues()">
+      <option value="name">Name</option>
+      <option value="id">ID</option>
+      <option value="entry">Entry</option>
+    </select>
+
+    <label for="filterSelect">Filter by:</label>
+    <select id="filterSelect" onchange="filterDues()">
+      <option value="all">All</option>
+      <option value="dues">Dues Pending</option>
+      <option value="paid">Paid Dues</option>
+    </select>
+  </div>
+                  
+      <footer>
+        <div class="copyright">
+          <p>© 2023, KabibiMedia Tel:+233552230864 Accra-Ghana</p>
+      </div>
+       </footer>
+              
+           <script src="duesbank.js"></script>
+           <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+         </body>
+    </html>

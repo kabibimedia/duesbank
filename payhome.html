@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dues Bank</title>
+    <link rel="stylesheet" href="duesbank.css">
+
+  </head>
+
+<body>
+  <header>
+    <img src="images/sm.png" class="logo" alt="">
+    <h4>Dues Bank</h4>
+    <h5>Payment Menu</h5>
+       <nav class="navigation">
+        <button class="btnLogin-popup" onclick="redirectToPage('home.html')"> Back </button>
+        <button class="btnRefresh" onclick="refreshPage()"> Refresh </button>
+        <button class="btnLogin-popup" onclick="redirectToPage('login.html')"> Logout </button>
+           <p id="date"></p>
+           <p id="time"></p>
+       </nav>
+   </header>
+    
+  <div class="menu-grid">
+    <div class="menu-item">
+      <h3>Payment</h3>
+      <p>Payment of Funeral,Wedding,Graduation contribution.</p>
+      <button class="btn" onclick="redirectToPage('payment.html')">  Pay Contribution  <ion-icon name="cash-outline"></ion-icon></button>
+      <p>Edit</p>
+      <button class="btn" onclick="redirectToPage('editpay.html')">  Edit payment  <ion-icon name="cash-outline"></ion-icon></button>
+      <p>Reversal</p>
+      <button class="btn" onclick="redirectToPage('reversepay.html')">  Reverse payment  <ion-icon name="cash-outline"></ion-icon></button>
+    </div>
+
+    <div class="menu-grid">
+        <div class="menu-item">
+          <h3>Payment Approval</h3>
+          <p>Payment of Funeral,Wedding,Graduation contribution.</p>
+          <button class="btn" onclick="redirectToPage('approvepay.html')">  Approve Payment Contribution  <ion-icon name="cash-outline"></ion-icon></button>
+          <p>Edit</p>
+          <button class="btn" onclick="redirectToPage('approveeditpay.html')">  Approve Edited payment  <ion-icon name="cash-outline"></ion-icon></button>
+          <p>Reversal</p>
+          <button class="btn" onclick="redirectToPage('approvereversepay.html')">  Approve Reversed payment  <ion-icon name="cash-outline"></ion-icon></button>
+        </div>
+
+  <footer>
+    <div class="copyright">
+      <p>© 2023, KabibiMedia Tel:+233552230864 Accra-Ghana</p>
+  </div>
+   </footer>
+          
+       <script src="duesbank.js"></script>
+       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+     </body>
+</html>
